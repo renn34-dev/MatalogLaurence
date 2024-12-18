@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume</title>
+</head>
+<body>
+    <nav id="upnav">
+        <a class="nav-link" href="#resume">Resume</a>
+        <a class="nav-link" href="#calculator">Calculator</a>
+     </nav>
+     <div id="resume" class="washi">
+     <header><img src="img/repic.jpg"/><br><h2 color="white">Laurence Ray C. Matalog</h2></header>
+     <div class="p1">
+         <h4>PROFILE</h4>
+         <p>Seeking a job utilizing about my understanding <br>about being a team and my communication skills. <br>Contribute extensively to the vision of this dynamic <br>company and find fulfillment in the knowledge <br>that the company provides me with personal and <br>professional advancement</p>
+         <h4>PERSONAL INFO</h4>
+             <div class="coninf">
+             <span>&#x260E;</span><b>: 09635143152</b><br><br>
+             <span>&#x2709;</span><b>: matalog.laurenceray.c210232@gmail.com</b><br><br>
+             <span>&#x1F4CC;</span><b>: Manghinao Uno, Bauan, Batangas</b><br><br>
+             <span>&#x1F5D2;</span><b> : November 13, 2001</b>
+             </div>
+         
+     <div class="work">
+         <h4>WORK EXPERIENCE</h4>
+         <h5>COMPANY NAME: JCB Catering Service</h5>
+         <ul>
+             <li>Assisted in the setup and breakdown of <br>catering events, ensuring all equipment <br>and supplies were properly prepared <br> and organized.</li><br>
+             <li>Collaborated with the catering team to <br>coordinate food and beverage service during <br>events, maintaining a high level of <br>professionalism and attention to detail.</li><br>
+             <li>Interacted with clients and guests, <br>providing exceptional customer service and <br>promptly addressing any inquiries or <br>special requests.</li>
+         </ul>
+         <h4>SKILLS</h4>
+         <ul>
+             <li>Quick Learner</li>
+             <li>Organized Multi-tasker</li>
+             <li>Decision Making</li>
+             <li>Ability to Work in a Team</li>
+             <li>Ability to Work Under Pressure</li>
+         </ul>
+ 
+     </div>
+     <hr>
+     <div class="me">
+         <h4>EDUCATION</h4>
+         <table>
+             <thead>
+                 <th>School</th>
+                 <th>Grade Level</th>
+                 <th>Strand/Course</th>
+                 <th>School Year</th>
+             </thead>
+             <tbody>       
+                 <tr>
+                     <td>Manghinao Elementary School</td>
+                     <td>Primary Level</td>
+                     <td>N/A</td>
+                     <td>2006-2008</td>
+                 </tr>     
+                 <tr>
+                     <td>Manghinao Elementary School</td>
+                     <td>Grade 1-6</td>
+                     <td>N/A</td>
+                     <td>2008-2014</td>
+                 </tr>
+                 <tr>
+                     <td>Bauan Technical Integrated High School</td>
+                     <td>Grade 7-10</td>
+                     <td>Electronics</td>
+                     <td>2014-2018</td>
+                 </tr>
+                 <tr>
+                     <td>Bauan Technical Integrated High School</td>
+                     <td>Grade 11-12</td>
+                     <td>ABM</td>
+                     <td>2018-2020</td>
+                 </tr>
+                 <tr>
+                     <td>Westmead Internationak School</td>
+                     <td>1st-4th Year</td>
+                     <td>BS Information Technology</td>
+                     <td>2021-2025</td>
+                 </tr>
+             </tbody>     
+         </table>            
+     </div>
+     <h4>REFERENCE</h4>
+         <ul>
+             <li>Lauro A. Agena JR.</li>
+             <li>Teacher II</li>
+             <li>Bauan Technical High School</li>
+             <li>09917736166</li>
+         </ul>
+         <br>
+     </div>
+ 
+ </div> 
+ <!-------------------------------------------------------------------->
+ <!--CALCULATOR-->
+ <script src="js/script.js"></script>
+ <div id="calculator">
+    <div id="backcal">
+         <div class="top">
+         <h1 class="topname">CALCULATOR</h1> 
+         <input class="slot" type="number" id="slot1" placeholder="Input here..."><br>
+         <input class="slot" type="number" id="slot2" placeholder="Input here..."><br>
+         <button type="submit" class="btn" onclick="sum_func()" >+</button>
+         <button type="submit" class="btn" onclick="subtract_func()">-</button>
+         <button type="submit" class="btn" onclick="product_func()">x</button>
+         <button type="submit" class="btn" onclick="divident_func()">/</button>
+         <p id="total">0</p>
+    </div>   
+ </div>
+ 
+ <div class="calendar">
+    <h1>Calendar</h1>
+	<input type="date" id="base" placeholder="Input Date..."/>
+	<div id="result"></div>
+	<button onclick="Datefunc()">click</button>
+ </div>
+
+ 
+</body>
+</html>
+

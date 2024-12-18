@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokeAPI with jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+  <h1>PokeAPI Example</h1>
+  <label for="namepokemon">Enter Pokemon ID or Name:</label>
+  <input type="text" id="namepokemon">
+  <button onclick="fetchpok()">Get Pokemon Data</button>
+
+  <div id="showpokemon"></div>
+
+  <script>
+    function fetchpok() {
+      var userInput = $('#namepokemon').val();
+      $.ajax({
+        url: 'https://pokeapi.co/api/v2/pokemon/' + userInput.toLowerCase(),
+        type: 'GET',
+        dataType: 'json',
+        success: function(data) {
+          trypokemon(data);
+        },
+        error: function(xhr, status, error) {
+          $('#showpokemon').html('Error: ' + xhr.responseText);
+        }
+      });
+    }
+
+    function trypokemon(pokemon) {
+      var html = '<h2>' + pokemon.name + '</h2>';
+      html += '<img src="' + pokemon.sprites.front_default + '" alt="' + pokemon.name + '">';
+      html += '<p>Height: ' + pokemon.height + ' decimetres</p>';
+      html += '<p>Weight: ' + pokemon.weight + ' hectograms</p>';
+      $('#showpokemon').html(html);
+    }
+  </script>
+
+</body>
+</html>

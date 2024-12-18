@@ -1,0 +1,78 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+  }
+
+  .about {
+    margin-left: 250px;
+    padding: 70px 20px;
+  }
+
+  .about-title {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 40px;
+  }
+
+  .about-title span {
+    color: orange;
+  }
+
+  .stats, .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .stat-card, .skill-bar {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    text-align: center;
+  }
+
+  .stat-card h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .stat-card p {
+    color: #888;
+    font-size: 1em;
+  }
+
+  .skills .skill-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .skills .skill-label {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .progress-bar {
+    height: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .progress-bar .progress {
+    height: 100%;
+    background-color: orange ;
+    width: 0;
+    transition: width 1s ease-in-out;
+  }
+
